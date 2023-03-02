@@ -1,1 +1,1 @@
-cool
+WIP Programming language in Rust
