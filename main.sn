@@ -1,0 +1,73 @@
+
+fn start () -> () a {
+    let orange = Orange {
+        power: 40
+    };
+
+    dbg! eat_fruit <EatableOrange> orange;
+}
+
+sum Fruit {
+    apple: Apple,
+    banana: Banana,
+    other,
+}
+
+mul Apple {}
+mul Banana {}
+
+mul Orange { power: 5 ^ 2 }
+
+fn eat_orange Orange -> 100 self {
+    cool::by::Orange -> cool ()
+    self.power
+
+    if { idk = {
+        cool = ~3,
+        is_true = `true (~wow, cool, hmm),
+        idk = ~wow,
+        hmm = `cool (),
+    } } = i {
+
+    }
+    
+    if <Bool> `true [] = is_true {
+
+    }
+
+    match <Bool> is_true {
+        true [] -> {},
+        false [] -> {},
+    }
+}
+
+impl EatableOrange of Eatable {
+    fn eat = eat_orange;
+}
+
+ctr Eatable {
+    fn eat ? -> 100;
+}
+
+ctr Clone {
+    fn do ? -> (?, ?);
+}
+
+
+ctr Food {
+    impl Eatable of Eatable;
+    impl Drinkable of Drinkable;
+}
+
+impl FoodOrange of Food {
+    impl Eatable = EatableOrange;
+    impl Drinkable = DrinkableOrange;
+}
+
+fn eat_fruit <eatable: Eatable> Fruit -> 100 fruit {
+    fruit => {
+        apple: self -> 50,
+        banana: self -> 70,
+        other: self -> eatable::eat self
+    }
+}
